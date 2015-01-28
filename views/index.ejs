@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <table>
+        <thead>
+        <tr>
+            <td>Name</td><td>Last name</td><td>Age</td>
+        </tr>
+        </thead>
+        <tbody>
+        <% for (var i in data) {%>
+        <tr>
+            <td><%= data[i].name%></td>
+            <td><%= data[i].lastName%></td>
+            <td><%= data[i].age%></td>
+            <%}%>
+        </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
